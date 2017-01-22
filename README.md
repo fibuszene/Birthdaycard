@@ -7,7 +7,7 @@ In Order to complete the exercise we had to design a Card first with Pen and Pap
 
 
 The  Mockup shows that I wanted sort of a Postcard look and feel. 
-![Mockup](/screens/mockup.jpg)
+![Mockup](/develop/screens/mockup.jpg)
 To achive this view I used a vertical layout to stack some TextViews on top of each other. 
 To seperate the text from the adress view i used a View layout with the height of 1px (-> px cause I want it to be the same height on all devices). 
 The same is used as seperator for the Adress lines. 
@@ -16,7 +16,12 @@ The Stamp is an ImageView put into place with android:layout_gravity="right|end|
 Since a postcard has two sides i used Androids rotate/landscape layout to display another layout (activity_main in res/layout-land) which is just a 
 fullscreen ImageView with some Text. 
 
-![Front](/screens/portrait_card.png)
-![Back](/screens/landscape_card.png)
+![Front](/develop/screens/portrait_card.png)
+![Back](/develop/screens/landscape_card.png)
 
-It looks like the custom font can't really be displayed... 
+
+And the whole thing in the interface builder of Android Studio...
+
+![Back](/develop/screens/screen_port_builder.png)
+![Front](/develop/screens/screen_land_builder.png)
+
