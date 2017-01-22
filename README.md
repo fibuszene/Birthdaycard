@@ -6,7 +6,7 @@ In Order to complete the exercise we had to design a Card first with Pen and Pap
 [Requirement Specification](https://classroom.udacity.com/courses/ud834-eu/lessons/2bdfe89e-b44c-4789-90a6-755077aff7f8/concepts/43534185690923#)
 
 
-The  ![Mockup](/screens/mockup.JPG) show that I wanted sort of a Postcard look and feel. 
+The  ![Mockup](/screens/mockup.jpg) show that I wanted sort of a Postcard look and feel. 
 To achive this view I used a vertical layout to stack some TextViews on top of each other. 
 To seperate the text from the adress view i used a View layout with the height of 1px (-> px cause I want it to be the same height on all devices). 
 The same is used as seperator for the Adress lines. 
