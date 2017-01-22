@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Make your own Card</string>
+    <string name="adress">Vertikaler Text fuer die Adresse</string>
+    <string name="adress1">waere schoener</string>
+    <string name="adress2">aber das langt zur Zeit</string>
+    <string name="card_content_description"></string>
+    <string name="card_text">Ich wollte eine Art Postkarte machen. Durch rotieren des Handys sieht man die Hinterseite. </string>
+    <string name="from">Von</string>
+    <string name="greetings_from">Hallo aus Oesterreich</string>
+</resources>

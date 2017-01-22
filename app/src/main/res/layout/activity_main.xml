@@ -1,16 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/postcard_frame"
+    android:orientation="vertical"
     tools:context="at.fibuszene.birthdaycard.MainActivity">
 
     <TextView
+        android:id="@+id/visitTxtView"
+        style="@style/LargeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/medium_padding"
+        android:text="@string/greetings_from" />
+
+    <TextView
+        android:id="@+id/cardText"
+        style="@style/MediumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visitTxtView"
+        android:layout_margin="@dimen/medium_padding"
+        android:padding="@dimen/tiny_padding"
+        android:text="@string/card_text" />
+
+    <View
+        android:id="@+id/cardDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_marginRight="@dimen/medium_padding"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/fromLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_marginTop="@dimen/large_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/adressLine"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/adress" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/adressLine1"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adress1" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/adressLine2"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adress2" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_marginRight="@dimen/medium_padding"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end|bottom"
+        android:layout_margin="@dimen/medium_padding"
+        android:rotation="-10"
+        android:contentDescription="@string/stamp_content_description"
+        android:src="@drawable/stamp" />
+</LinearLayout>
