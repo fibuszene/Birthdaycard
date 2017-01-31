@@ -34,69 +34,75 @@
         android:layout_marginRight="@dimen/medium_padding"
         android:background="@android:color/black" />
 
-    <LinearLayout
-        android:id="@+id/fromLayout"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/medium_padding"
-        android:layout_marginTop="@dimen/large_padding"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/adressLine"
-            style="@style/MediumText"
+        <LinearLayout
+            android:id="@+id/fromLayout"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="@string/adress" />
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/large_padding"
+            android:orientation="horizontal">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_marginRight="@dimen/medium_padding"
-            android:background="@android:color/black" />
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:background="@android:color/black" />
 
-        <TextView
-            android:id="@+id/adressLine1"
-            style="@style/MediumText"
+            <at.fibuszene.birthdaycard.views.VerticalTextView
+                android:id="@+id/adressLine2"
+                style="@style/MediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adress2" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:background="@android:color/black" />
+
+            <at.fibuszene.birthdaycard.views.VerticalTextView
+                android:id="@+id/adressLine1"
+                style="@style/MediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/adress1" />
+
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:background="@android:color/black" />
+
+
+            <at.fibuszene.birthdaycard.views.VerticalTextView
+                android:id="@+id/adressLine"
+                style="@style/MediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/adress" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/stamp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/adress1" />
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="1px"
-            android:layout_marginRight="@dimen/medium_padding"
-            android:background="@android:color/black" />
-
-        <TextView
-            android:id="@+id/adressLine2"
-            style="@style/MediumText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/adress2" />
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="1px"
-            android:layout_marginRight="@dimen/medium_padding"
-            android:background="@android:color/black" />
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="@dimen/medium_padding"
-        android:layout_marginRight="@dimen/medium_padding"
-        android:layout_weight="1" />
-
-    <ImageView
-        android:id="@+id/stamp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|end|bottom"
-        android:layout_margin="@dimen/medium_padding"
-        android:rotation="-10"
-        android:contentDescription="@string/stamp_content_description"
-        android:src="@drawable/stamp" />
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/medium_padding"
+            android:contentDescription="@string/stamp_content_description"
+            android:rotation="-10"
+            android:src="@drawable/stamp" />
+    </RelativeLayout>
 </LinearLayout>

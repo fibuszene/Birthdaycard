@@ -5,8 +5,8 @@
     <string name="card_text">I went for the authentic Post-Card Experience with Postage Stamp and everything.\nIf you rotate your phone you can see the backside of the card.</string>
     <string name="from_name">Benedikt</string>
     <string name="from">From</string>
-    <string name="adress">Vertical Text for the address</string>
-    <string name="adress1">would be prettier</string>
-    <string name="adress2">but this works for now.</string>
+    <string name="adress">Vertical Text was a</string>
+    <string name="adress1">bad idea it\'s kinda</string>
+    <string name="adress2">hard to read :D</string>
     <string name="stamp_content_description">Image of a stamp</string>
 </resources>
